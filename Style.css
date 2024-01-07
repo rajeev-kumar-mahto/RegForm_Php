@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  background: #f2f2f2;
+}
+.box {
+  background: white;
+  width: 500px;
+  padding: 25px;
+  margin: 50px auto 0;
+  border-top: 5px solid blue;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.9);
+}
+.box h2 {
+  font-size: 25px;
+  line-height: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.user {
+  padding: 8px 11px;
+}
+.input-box {
+  width: 90%;
+  position: relative;
+  margin: 15px auto;
+}
+.name {
+  width: 45%;
+  padding: 8px 0 8px 40px;
+}
+
+.box .close {
+  color: red;
+  line-height: 20px;
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.input-box span {
+  margin-left: 30px;
+}
+.input-box i {
+  position: absolute;
+  font-size: 18px;
+  color: blue;
+  border-right: 2px solid #cccccc;
+}
+.input-text {
+  width: 100%;
+  padding: 8px 0 8px 40px;
+}
+.email {
+  padding: 8px;
+}
+.lock {
+  padding: 8px;
+}
+
+.input-text,
+.name {
+  border: 1px solid #cccccc;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-kit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.input-text:focus,
+.name:focus,
+.country:focus {
+  border: 2px solid #ef09dc;
+}
+
+.radio-button {
+  margin-right: 4px;
+}
+.country {
+  height: 35px;
+  padding: 0 0 10px;
+  width: 50%;
+  cursor: pointer;
+  border: 2px solid #cccccc;
+  color: #7b7b7b;
+  border-right: 0;
+  background: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.3s ease-in-out;
+  text-align: start;
+}
+.country::-ms-expand {
+  display: none;
+}
+.country:hover,
+.country:focus {
+  color: blue;
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 180px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-width: 8px 8px 0 5px;
+  border-style: solid;
+  border-color: blue transparent transparent transparent;
+}
+
+.country:hover + .arrow,
+.country:focus + .arrow {
+  border-top-color: blue;
+}
+
+.check {
+  margin-right: 15px;
+  position: relative;
+}
+
+.input-name {
+  display: flex;
+  font-size: 15px;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
